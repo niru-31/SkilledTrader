@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const response =
         await fetch(
-          "http://localhost:5000/api/courses"
+          "https://skilled-trader.onrender.com/api/courses"
         );
 
       const data =
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const response =
           await fetch(
-            "http://localhost:5000/api/chapters",
+            "https://skilled-trader.onrender.com/api/chapters",
             {
               method: "POST",
 

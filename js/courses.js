@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
 
       const response =
-        await fetch("http://localhost:5000/api/courses");
+        await fetch("https://skilled-trader.onrender.com/api/courses");
 
       const data =
         await response.json();
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           const response =
             await fetch(
-              "http://localhost:5000/api/enrollments",
+              "https://skilled-trader.onrender.com/api/enrollments",
               {
                 method: "POST",
                 headers: {

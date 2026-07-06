@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadCourse() {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/courses/${courseId}`
+        `https://skilled-trader.onrender.com/api/courses/${courseId}`
       );
 
       const data = await response.json();
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadChapters() {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/chapters/${courseId}`
+        `https://skilled-trader.onrender.com/api/chapters/${courseId}`
       );
 
       const data = await response.json();
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadProgress() {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/progress/${courseId}`,
+        `https://skilled-trader.onrender.com/api/progress/${courseId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/progress/mark-complete",
+        "https://skilled-trader.onrender.com/api/progress/mark-complete",
         {
           method: "POST",
           headers: {
@@ -383,7 +383,7 @@ document.addEventListener("DOMContentLoaded", () => {
   try {
     const response =
       await fetch(
-        "http://localhost:5000/api/certificates/issue",
+        "https://skilled-trader.onrender.com/api/certificates/issue",
         {
           method: "POST",
           headers: {

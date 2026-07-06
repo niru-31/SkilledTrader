@@ -5,7 +5,7 @@ const toggleBtn = document.getElementById("toggleBtn");
 const welcomeTitle = document.getElementById("welcomeTitle");
 const welcomeText = document.getElementById("welcomeText");
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://skilled-trader.onrender.com/api/auth";
 
 let isLogin = true;
 

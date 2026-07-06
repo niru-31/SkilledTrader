@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const API = "http://localhost:5000/api";
+  const API = "https://skilled-trader.onrender.com/api";
 
   const myCoursesGrid =
     document.getElementById("myCoursesGrid");

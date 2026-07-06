@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const API = "http://localhost:5000/api";
+  const API = "https://skilled-trader.onrender.com/api";
 
   const joinBtn = document.querySelector(".btn-primary");
   const upcomingBtn = document.querySelector(".btn-secondary");
