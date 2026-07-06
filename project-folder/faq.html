@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>FAQ — SkilledTrader</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+<nav id="nav">
+
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-mark">ST</div>
+
+    <span class="nav-logo-text">
+      Skilled<span>Trader</span>
+    </span>
+  </a>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="about.html">About</a></li>
+
+    <li><a href="courses.html">Courses</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+    <li>
+      <button class="logout-btn" onclick="logout()">
+        Logout
+      </button>
+    </li>
+
+  </ul>
+  <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+
+</nav>
+
+<!-- =========================
+     FAQ HERO
+========================= -->
+<section class="faq-hero">
+
+  <div class="faq-hero-bg"></div>
+
+  <div class="max-w faq-hero-inner">
+
+    <div class="faq-hero-content reveal">
+
+      <div class="sec-eyebrow">
+        Frequently Asked Questions
+      </div>
+
+      <h1>
+        Answers for beginners,
+        traders & finance learners.
+      </h1>
+
+      <p>
+        Everything you need to know about SkilledTrader,
+        trading education, mentorship, and financial markets.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FAQ SECTION
+========================= -->
+<section class="faq-section">
+
+  <div class="max-w">
+
+    <!-- CATEGORY -->
+    <div class="faq-category reveal">
+
+      <div class="sec-eyebrow">
+        Trading Basics
+      </div>
+
+      <div class="faq-container">
+
+        <!-- ITEM -->
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>What is SkilledTrader?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              SkilledTrader is a financial education platform focused on
+              trading, investing, market analysis, and beginner-friendly
+              stock market learning.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Can complete beginners join?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. SkilledTrader is designed especially for beginners who
+              want structured and practical financial education.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Do I need finance background?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              No finance degree is required. We teach concepts from the
+              basics and gradually move toward advanced topics.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="faq-category reveal">
+
+      <div class="sec-eyebrow">
+        Trading & Risk
+      </div>
+
+      <div class="faq-container">
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Is trading risky?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. Trading involves financial risk. That is why risk
+              management and discipline are core parts of our education.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>How much capital is required?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Beginners should focus on learning first instead of capital.
+              Even small capital can be used while practising responsibly.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Do you teach options trading?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Yes. SkilledTrader covers derivatives, options trading,
+              technical analysis, and market structure concepts.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="faq-category reveal">
+
+      <div class="sec-eyebrow">
+        Courses & Mentorship
+      </div>
+
+      <div class="faq-container">
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Are courses live or recorded?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Courses may include recorded lessons, live mentorship,
+              practical sessions, and community discussions.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Will mentorship be included?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Selected programs and premium plans may include mentorship,
+              doubt-solving sessions, and live guidance.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Will certificates be provided?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Certification options may be available depending on the
+              program and learning track.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="faq-category reveal">
+
+      <div class="sec-eyebrow">
+        Finance Careers
+      </div>
+
+      <div class="faq-container">
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>What careers exist besides trading?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Financial markets include careers like investment advisory,
+              equity research, portfolio management, risk analysis,
+              and wealth management.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>What is equity research?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Equity research involves analyzing companies, studying
+              financial statements, valuation, and investment opportunities.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>Can trading become a full-time career?</span>
+
+            <span class="faq-icon">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              It is possible, but it requires education, discipline,
+              emotional control, and long-term consistency.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     CTA SECTION
+========================= -->
+<section class="faq-cta">
+
+  <div class="max-w reveal">
+
+    <div class="cta-box">
+
+      <h2>
+        Still have questions?
+      </h2>
+
+      <p>
+        Connect with SkilledTrader and start your
+        financial learning journey today.
+      </p>
+
+      <a href="contact.html" class="btn-primary">
+        Contact Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer>
+  © 2026 <strong>SkilledTrader</strong>
+  · Financial Education Platform · India
+</footer>
+
+<!-- =========================
+     FAQ SCRIPT
+========================= -->
+<script>
+
+const faqQuestions =
+document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach((question) => {
+
+  question.addEventListener("click", () => {
+
+    const faqItem =
+    question.parentElement;
+
+    faqItem.classList.toggle("active");
+
+  });
+
+});
+
+</script>
+
+<!-- MAIN JS -->
+<script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Profile | SkilledTrader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/profile.css">
+
+</head>
+<body>
+
+<div class="profile-page">
+
+  <header class="profile-header">
+
+    <div>
+      <p class="eyebrow">Student Portal</p>
+
+      <h1>My Profile</h1>
+
+      <span>
+        Manage your personal details, learning profile and account settings.
+      </span>
+    </div>
+
+    <a href="dashboard.html" class="back-btn">
+      ← Dashboard
+    </a>
+
+  </header>
+
+  <section class="profile-layout">
+
+    <div class="profile-card">
+
+      <div class="profile-avatar">
+        N
+      </div>
+
+      <h2>
+        Niranjan Sharma
+      </h2>
+
+      <p>
+        Student · SkilledTrader Academy
+      </p>
+
+      <div class="profile-badge">
+        Bullish Learner
+      </div>
+
+      <div class="profile-stats">
+
+        <div>
+          <h3>4</h3>
+          <span>Courses</span>
+        </div>
+
+        <div>
+          <h3>2</h3>
+          <span>Certificates</span>
+        </div>
+
+        <div>
+          <h3>12</h3>
+          <span>Day Streak</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="profile-form-card">
+
+      <h2>
+        Personal Information
+      </h2>
+
+      <form id="profileForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" value="Niranjan Sharma">
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" value="niranjan@example.com">
+          </div>
+
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" value="+91 98765 43210">
+          </div>
+
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" value="Vadodara">
+          </div>
+
+          <div class="form-group">
+            <label>Learning Level</label>
+            <select>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Primary Goal</label>
+            <select>
+              <option>Learn Trading Basics</option>
+              <option>Improve Technical Analysis</option>
+              <option>Long Term Investing</option>
+            </select>
+          </div>
+
+        </div>
+
+        <button type="submit" class="save-btn">
+          Save Changes
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <section class="account-section">
+
+    <div class="account-card">
+
+      <h2>Learning Summary</h2>
+
+      <div class="summary-list">
+
+        <div>
+          <span>Learning Score</span>
+          <strong>85 / 100</strong>
+        </div>
+
+        <div>
+          <span>Completed Lessons</span>
+          <strong>32</strong>
+        </div>
+
+        <div>
+          <span>Total Study Time</span>
+          <strong>28h 45m</strong>
+        </div>
+
+        <div>
+          <span>Current Trend</span>
+          <strong class="green-text">Bullish</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="account-card">
+
+      <h2>Account Security</h2>
+
+      <div class="security-box">
+
+        <input type="password" placeholder="Current Password">
+        <input type="password" placeholder="New Password">
+
+        <button id="passwordBtn">
+          Update Password
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+<script src="/js/profile.js"></script>
+
+</body>
+</html>

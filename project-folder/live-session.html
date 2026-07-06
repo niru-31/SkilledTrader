@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Live Session — SkilledTrader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/live-session.css">
+</head>
+
+<body>
+
+<nav id="nav">
+
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">ST</div>
+
+    <div class="nav-logo-text">
+      Skilled<span>Trader</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="live-session.html">Live Sessions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <li>
+      <a href="my-courses.html" class="nav-cta">
+        My Courses
+      </a>
+    </li>
+  </ul>
+
+  <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+
+</nav>
+
+<main class="live-page">
+
+  <section class="live-hero">
+
+    <div class="live-bg"></div>
+    <div class="live-blob"></div>
+
+    <div class="live-inner">
+
+      <div class="live-left">
+
+        <div class="live-tag">
+          <span></span>
+          Live Learning System
+        </div>
+
+        <h1>
+          SkilledTrader <em>Live Session</em>
+        </h1>
+
+        <p>
+          Attend live market classes, doubt sessions and strategy discussions.
+          When the mentor starts the session, the live class will appear directly inside this page.
+        </p>
+
+        <div class="live-actions">
+          <a href="#live-class" class="btn-primary">
+            Join Live Class
+          </a>
+
+          <a href="#upcoming" class="btn-secondary">
+            Upcoming Sessions
+          </a>
+        </div>
+
+      </div>
+
+      <div class="session-status-card">
+
+        <div class="status-pill" id="liveStatusPill">
+          ● Checking Status
+        </div>
+
+        <h3>
+          Next Session
+        </h3>
+
+        <h2 id="nextSessionTitle">
+          Loading...
+        </h2>
+
+        <p id="nextSessionCourse">
+          Loading course...
+        </p>
+
+        <div class="session-time" id="nextSessionTime">
+          Loading time...
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="live-class-section" id="live-class">
+
+    <div class="live-class-grid">
+
+      <div class="live-video-area">
+
+        <div class="video-card">
+
+          <div class="video-topbar">
+
+            <div>
+              <span class="live-dot"></span>
+              Live Class
+            </div>
+
+            <small id="liveSessionMeta">
+              Waiting for session
+            </small>
+
+          </div>
+
+          <div class="live-video-box">
+
+            <div id="jitsiContainer">
+
+              <div class="video-placeholder">
+
+                <div class="play-circle">
+                  ⏳
+                </div>
+
+                <h2>
+                  Waiting for Host
+                </h2>
+
+                <p>
+                  The live class will appear here when the mentor starts the session.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="current-session-info">
+
+          <div class="sec-eyebrow">
+            Current Session
+          </div>
+
+          <h2 id="currentSessionTitle">
+            Waiting for Live Session
+          </h2>
+
+          <p id="currentSessionDescription">
+            Live session details will appear here.
+          </p>
+
+          <div class="session-tags" id="sessionTags">
+            <span>SkilledTrader</span>
+            <span>Live Class</span>
+            <span>Mentor Session</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <aside class="live-sidebar">
+
+        <div class="sidebar-card recording-card">
+
+          <h3>
+            Recording Notice
+          </h3>
+
+          <p>
+            After this live session ends, the recording can be added to the related course module.
+          </p>
+
+          <div class="module-path" id="recordingPath">
+            Course → Module → Live Recording
+          </div>
+
+        </div>
+
+        <div class="sidebar-card notes-card">
+
+          <h3>
+            Class Notes
+          </h3>
+
+          <ul id="classNotesList">
+            <li>Notes will appear when added by mentor.</li>
+          </ul>
+
+          <a href="#" class="download-notes" id="downloadNotesBtn">
+            Download Notes
+          </a>
+
+        </div>
+
+        <div class="sidebar-card chat-card">
+
+          <h3>
+            Live Chat
+          </h3>
+
+          <div class="chat-message">
+            <strong>System:</strong>
+            Chat is available inside the live class.
+          </div>
+
+          <input
+            type="text"
+            placeholder="Use Jitsi chat during live session"
+            disabled
+          >
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+  <section class="upcoming-section" id="upcoming">
+
+    <div class="max-w">
+
+      <div class="sec-eyebrow">
+        Schedule
+      </div>
+
+      <h2 class="sec-title">
+        Upcoming Live Sessions
+      </h2>
+
+      <div class="upcoming-grid" id="upcomingGrid">
+
+        <div class="upcoming-card">
+
+          <div class="upcoming-date">
+            Loading
+          </div>
+
+          <h3>
+            Loading sessions...
+          </h3>
+
+          <p>
+            Please wait.
+          </p>
+
+          <span>
+            --
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="recording-flow-section">
+
+    <div class="max-w">
+
+      <div class="flow-card">
+
+        <div>
+
+          <div class="sec-eyebrow">
+            Live Learning Flow
+          </div>
+
+          <h2>
+            Missed The Live Class? Watch It Inside Your Course.
+          </h2>
+
+          <p>
+            Every live session can be recorded and added to the related course module,
+            so students can revise important topics anytime without missing the learning flow.
+          </p>
+
+        </div>
+
+        <div class="flow-steps">
+
+          <div>
+            <span>01</span>
+            Attend Live Session
+          </div>
+
+          <div>
+            <span>02</span>
+            Recording Added To Course
+          </div>
+
+          <div>
+            <span>03</span>
+            Revise Anytime
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      <span>ST</span>
+      SkilledTrader
+    </div>
+
+    <p>
+      Learn. Build. Grow.
+    </p>
+
+    <div class="footer-links">
+      <a href="courses.html">Courses</a>
+      <a href="live-session.html">Live Sessions</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <small>
+      © 2026 SkilledTrader. All rights reserved.
+    </small>
+
+  </div>
+
+</footer>
+
+<script src="https://meet.jit.si/external_api.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/live-session.js"></script>
+
+</body>
+</html>

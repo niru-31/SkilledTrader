@@ -1,0 +1,21 @@
+# Node
+Backend/node_modules/
+node_modules/
+
+# Environment
+Backend/.env
+.env
+
+# Google Credentials
+Backend/config/google-drive-key.json
+Backend/config/google-oauth-key.json
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+Backend/test-certificate.pdf

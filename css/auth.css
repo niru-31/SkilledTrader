@@ -1,0 +1,355 @@
+/* =========================================
+   SKILLEDTRADER AUTH PAGE
+========================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --green:#2E7D5B;
+  --green-light:#4CAF7A;
+  --green-pale:#E3ECE7;
+  --bg:#F5F7F6;
+  --text:#1F2A2E;
+  --text-soft:rgba(31,42,46,.55);
+  --border:rgba(46,125,91,.14);
+  --shadow:0 10px 40px rgba(31,42,46,.08);
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:
+  radial-gradient(circle at top left,
+  rgba(76,175,122,.10),
+  transparent 30%),
+  radial-gradient(circle at bottom right,
+  rgba(46,125,91,.10),
+  transparent 30%),
+  var(--bg);
+
+  font-family:'Inter',sans-serif;
+  overflow:hidden;
+  padding:20px;
+}
+
+/* CONTAINER */
+.container{
+  width:100%;
+  max-width:1000px;
+  min-height:620px;
+  background:rgba(255,255,255,.75);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,.4);
+  box-shadow:var(--shadow);
+
+  border-radius:28px;
+  overflow:hidden;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+/* =========================================
+   LEFT
+========================================= */
+
+.form-section{
+  padding:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.form{
+  width:100%;
+  max-width:380px;
+  display:none;
+  flex-direction:column;
+}
+
+.active-form{
+  display:flex;
+}
+
+.form h1{
+  font-family:'Playfair Display',serif;
+  font-size:3rem;
+  color:var(--text);
+  margin-bottom:10px;
+  letter-spacing:-.03em;
+}
+
+.form-sub{
+  color:var(--text-soft);
+  margin-bottom:35px;
+  line-height:1.7;
+  font-size:.95rem;
+}
+
+/* INPUTS */
+.form input{
+  width:100%;
+  padding:16px 18px;
+  border-radius:14px;
+  border:1px solid transparent;
+  background:#fff;
+  margin-bottom:16px;
+
+  outline:none;
+
+  font-size:.95rem;
+  color:var(--text);
+
+  transition:.25s;
+  box-shadow:0 2px 10px rgba(0,0,0,.03);
+}
+
+.form input:focus{
+  border-color:rgba(46,125,91,.25);
+  box-shadow:0 0 0 4px rgba(46,125,91,.08);
+}
+
+/* BUTTON */
+.form button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:14px;
+
+  background:linear-gradient(
+    135deg,
+    var(--green),
+    var(--green-light)
+  );
+
+  color:#fff;
+  font-size:.95rem;
+  font-weight:600;
+
+  cursor:pointer;
+  transition:.3s;
+
+  margin-top:5px;
+}
+
+.form button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(46,125,91,.25);
+}
+
+/* SOCIAL */
+.or-text{
+  text-align:center;
+  margin:28px 0 20px;
+  color:var(--text-soft);
+  font-size:.85rem;
+}
+
+.social-icons{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+}
+
+.social-icons a{
+  width:44px;
+  height:44px;
+
+  border-radius:14px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-decoration:none;
+
+  background:#fff;
+  color:var(--green);
+
+  border:1px solid var(--border);
+
+  transition:.25s;
+}
+
+.social-icons a:hover{
+  background:var(--green);
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.welcome-section{
+  background:
+  linear-gradient(
+    135deg,
+    rgba(46,125,91,.95),
+    rgba(76,175,122,.92)
+  );
+
+  position:relative;
+  overflow:hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:60px;
+}
+
+/* decorative circles */
+.welcome-section::before,
+.welcome-section::after{
+  content:'';
+  position:absolute;
+  border-radius:50%;
+  background:rgba(255,255,255,.08);
+}
+
+.welcome-section::before{
+  width:300px;
+  height:300px;
+  top:-120px;
+  right:-120px;
+}
+
+.welcome-section::after{
+  width:220px;
+  height:220px;
+  bottom:-80px;
+  left:-80px;
+}
+
+.welcome-content{
+  position:relative;
+  z-index:2;
+  max-width:360px;
+  color:#fff;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:35px;
+}
+
+.brand-mark{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:#fff;
+  color:var(--green);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-weight:700;
+  font-family:'Playfair Display',serif;
+}
+
+.brand-text{
+  font-size:1rem;
+  font-weight:600;
+}
+
+.brand-text span{
+  opacity:.7;
+}
+
+.welcome-content h1{
+  font-family:'Playfair Display',serif;
+  font-size:3rem;
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+.welcome-content p{
+  line-height:1.8;
+  opacity:.9;
+  margin-bottom:35px;
+}
+
+/* TOGGLE BTN */
+#toggleBtn{
+  padding:14px 24px;
+  border-radius:14px;
+
+  border:1px solid rgba(255,255,255,.25);
+
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(10px);
+
+  color:#fff;
+
+  cursor:pointer;
+
+  font-size:.92rem;
+  font-weight:500;
+
+  transition:.3s;
+}
+
+#toggleBtn:hover{
+  background:#fff;
+  color:var(--green);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:900px){
+
+  .container{
+    grid-template-columns:1fr;
+  }
+
+  .welcome-section{
+    display:none;
+  }
+
+  .form-section{
+    padding:40px 25px;
+  }
+
+  .form h1{
+    font-size:2.3rem;
+  }
+}
+
+.password-box{
+  position:relative;
+  width:100%;
+}
+
+.password-box input{
+  width:100%;
+  padding-right:50px;
+}
+
+.toggle-password{
+  position:absolute;
+  right:15px;
+  top:50%;
+  transform:translateY(-50%);
+  cursor:pointer;
+  color:#777;
+  z-index:10;
+}
+
+.toggle-password:hover{
+  color:#2E7D5B;
+}

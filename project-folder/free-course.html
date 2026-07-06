@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Free Trading Starter — SkilledTrader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/free-course.css">
+</head>
+<body>
+
+<nav id="nav">
+
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-mark">ST</div>
+    <span class="nav-logo-text">
+      Skilled<span>Trader</span>
+    </span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="courses.html" class="nav-cta">All Courses</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+
+</nav>
+
+<main class="course-page">
+
+  <section class="course-player-section">
+
+    <div class="course-player-grid">
+
+      <div class="video-area">
+
+        <div class="course-label">
+          <span></span>
+          100% Free Course
+        </div>
+
+        <h1>
+          Free <span>Trading</span> Starter
+        </h1>
+
+        <p class="course-subtitle">
+          Learn stock market basics, candlesticks, risk management,
+          and trading psychology with structured beginner lessons.
+        </p>
+
+        <div class="main-video-card">
+
+          <div class="video-topbar">
+            <span>Now Playing</span>
+            <small id="lessonMeta">Module 01 · Chapter 01</small>
+          </div>
+
+          <div class="video-box">
+            <video
+              id="courseVideo"
+              controls
+              controlsList="nodownload"
+              preload="metadata"
+              poster="/images/course-thumbnail.jpg"
+            >
+              <source src="/videos/free/module-01-chapter-01.mp4" type="video/mp4">
+              Your browser does not support video playback.
+            </video>
+          </div>
+
+        </div>
+
+        <div class="lesson-details">
+
+          <div>
+            <div class="sec-eyebrow">Current Lesson</div>
+
+            <h2 id="lessonTitle">
+              What is Stock Market?
+            </h2>
+
+            <p id="lessonDescription">
+              Understand what the stock market is and how beginners should start learning safely.
+            </p>
+          </div>
+
+          <button class="mark-read-btn">
+            Mark Chapter as Read
+          </button>
+
+        </div>
+
+      </div>
+
+      <aside class="course-sidebar">
+
+        <div class="progress-box">
+
+          <div class="progress-top">
+            <span>Your Progress</span>
+            <strong id="progressPercent">0%</strong>
+          </div>
+
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+
+          <p id="progressText">
+            0 of 15 chapters completed
+          </p>
+
+        </div>
+
+        <div class="modules-box">
+
+          <h3>Course Content</h3>
+
+          <div class="module-group active">
+
+            <button class="module-title">
+              <span>Module 01</span>
+              Market Basics
+            </button>
+
+            <div class="chapter-items">
+
+              <button
+                class="chapter-item active"
+                data-video="/videos/free/module-01-chapter-01.mp4"
+                data-title="What is Stock Market?"
+                data-meta="Module 01 · Chapter 01"
+              >
+                <span>▶</span>
+                What is Stock Market?
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-01-chapter-02.mp4"
+                data-title="NSE, BSE and SEBI Basics"
+                data-meta="Module 01 · Chapter 02"
+              >
+                <span>○</span>
+                NSE, BSE and SEBI Basics
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-01-chapter-03.mp4"
+                data-title="Equity, Index and Sectors"
+                data-meta="Module 01 · Chapter 03"
+              >
+                <span>○</span>
+                Equity, Index and Sectors
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="module-group">
+
+            <button class="module-title">
+              <span>Module 02</span>
+              Trading vs Investing
+            </button>
+
+            <div class="chapter-items">
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-02-chapter-01.mp4"
+                data-title="Trading vs Investing"
+                data-meta="Module 02 · Chapter 01"
+              >
+                <span>○</span>
+                Trading vs Investing
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-02-chapter-02.mp4"
+                data-title="Short Term vs Long Term"
+                data-meta="Module 02 · Chapter 02"
+              >
+                <span>○</span>
+                Short Term vs Long Term
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-02-chapter-03.mp4"
+                data-title="Beginner Roadmap"
+                data-meta="Module 02 · Chapter 03"
+              >
+                <span>○</span>
+                Beginner Roadmap
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="module-group">
+
+            <button class="module-title">
+              <span>Module 03</span>
+              Candlestick Basics
+            </button>
+
+            <div class="chapter-items">
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-03-chapter-01.mp4"
+                data-title="How Candles Are Formed"
+                data-meta="Module 03 · Chapter 01"
+              >
+                <span>○</span>
+                How Candles Are Formed
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-03-chapter-02.mp4"
+                data-title="Bullish and Bearish Candles"
+                data-meta="Module 03 · Chapter 02"
+              >
+                <span>○</span>
+                Bullish and Bearish Candles
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-03-chapter-03.mp4"
+                data-title="Basic Candle Patterns"
+                data-meta="Module 03 · Chapter 03"
+              >
+                <span>○</span>
+                Basic Candle Patterns
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="module-group">
+
+            <button class="module-title">
+              <span>Module 04</span>
+              Support & Resistance
+            </button>
+
+            <div class="chapter-items">
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-04-chapter-01.mp4"
+                data-title="What is Support?"
+                data-meta="Module 04 · Chapter 01"
+              >
+                <span>○</span>
+                What is Support?
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-04-chapter-02.mp4"
+                data-title="What is Resistance?"
+                data-meta="Module 04 · Chapter 02"
+              >
+                <span>○</span>
+                What is Resistance?
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-04-chapter-03.mp4"
+                data-title="Marking Important Levels"
+                data-meta="Module 04 · Chapter 03"
+              >
+                <span>○</span>
+                Marking Important Levels
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="module-group">
+
+            <button class="module-title">
+              <span>Module 05</span>
+              Risk & Psychology
+            </button>
+
+            <div class="chapter-items">
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-05-chapter-01.mp4"
+                data-title="Position Sizing Basics"
+                data-meta="Module 05 · Chapter 01"
+              >
+                <span>○</span>
+                Position Sizing Basics
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-05-chapter-02.mp4"
+                data-title="Stop Loss and Risk Reward"
+                data-meta="Module 05 · Chapter 02"
+              >
+                <span>○</span>
+                Stop Loss and Risk Reward
+              </button>
+
+              <button
+                class="chapter-item"
+                data-video="/videos/free/module-05-chapter-03.mp4"
+                data-title="Discipline and Emotions"
+                data-meta="Module 05 · Chapter 03"
+              >
+                <span>○</span>
+                Discipline and Emotions
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+  <section class="fc-notes">
+
+    <div class="max-w">
+
+      <div class="sec-eyebrow">Study Material</div>
+
+      <h2 class="sec-title">
+        Download Course Notes
+      </h2>
+
+      <div class="notes-grid">
+
+        <div class="note-card">
+          <h3>Module 01 Notes</h3>
+          <p>Stock Market Basics PDF</p>
+          <a href="#" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Module 02 Notes</h3>
+          <p>Trading vs Investing PDF</p>
+          <a href="#" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Module 03 Notes</h3>
+          <p>Candlestick Basics PDF</p>
+          <a href="#" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Module 04 Notes</h3>
+          <p>Support & Resistance PDF</p>
+          <a href="#" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Module 05 Notes</h3>
+          <p>Risk Management PDF</p>
+          <a href="#" download>Download PDF</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="fc-certificate">
+
+    <div class="max-w">
+
+      <div class="certificate-grid">
+
+        <div class="certificate-content">
+
+          <div class="sec-eyebrow">Certificate</div>
+
+          <h2 class="sec-title">
+            Earn Your Course Certificate
+          </h2>
+
+          <p>
+            Complete all chapters to unlock your SkilledTrader
+            Free Trading Starter Certificate.
+          </p>
+
+          <ul>
+            <li>✔ Completion Certificate</li>
+            <li>✔ Resume Ready</li>
+            <li>✔ Showcase On LinkedIn</li>
+            <li>✔ Lifetime Access</li>
+          </ul>
+
+        </div>
+
+        <div class="certificate-card">
+
+          <div class="certificate-inner">
+
+            <span>CERTIFICATE OF COMPLETION</span>
+
+            <h3>Free Trading Starter</h3>
+
+            <p>This certifies that</p>
+
+            <h4>Your Name</h4>
+
+            <p>
+              has successfully completed the SkilledTrader Free Course.
+            </p>
+
+            <strong>SkilledTrader</strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="fc-cta">
+
+    <div class="max-w">
+
+      <div class="cta-card">
+
+        <h2>Ready for the next level?</h2>
+
+        <p>
+          Continue with structured foundation and technical analysis programs.
+        </p>
+
+        <a href="courses.html" class="btn-primary">
+          Explore Premium Courses
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      <span>ST</span>
+      SkilledTrader
+    </div>
+
+    <p>
+      Learn. Build. Grow.
+    </p>
+
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <small>
+      © 2026 SkilledTrader. All rights reserved.
+    </small>
+
+  </div>
+
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/free-course.js"></script>
+
+</body>
+</html>

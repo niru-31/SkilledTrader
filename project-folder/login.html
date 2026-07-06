@@ -1,0 +1,119 @@
+<!-- =========================
+FILE: login.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Signup</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/auth.css">
+  </head>
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="form-section">
+
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="form active-form">
+
+        <h1>Signin</h1>
+        <p class="form-sub"> Access your SkilledTrader account and continue your market journey.</p>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <div class="password-box">
+        <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password"
+        required>
+        <i class="fa-solid fa-eye toggle-password"data-target="loginPassword"></i>
+        </div>
+
+        <button type="submit">Signin</button>
+
+        <p class="or-text">or signin with</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form id="signupForm" class="form">
+
+        <h1>Signup</h1>
+        <p class="form-sub">Create your account and start learning markets the right way.</p>
+
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <div class="password-box">
+        <input
+        type="password"
+        id="signupPassword"
+        placeholder="Password"
+        required><i class="fa-solid fa-eye toggle-password" data-target="signupPassword"></i>
+        </div>
+
+        <button type="submit">Signup</button>
+
+        <p class="or-text">or signup with</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+<div class="welcome-section">
+
+  <div class="welcome-content">
+
+    <div class="brand">
+      <div class="brand-mark">ST</div>
+
+      <div class="brand-text">
+        Skilled<span>Trader</span>
+      </div>
+    </div>
+
+    <h1 id="welcomeTitle">Welcome Back!</h1>
+
+    <p id="welcomeText">
+      Welcome back! We are so happy to have you here.
+      It's great to see you again.
+    </p>
+
+    <button id="toggleBtn">
+      No account yet? Signup.
+    </button>
+
+  </div>
+
+</div>
+  </div>
+  <script src="/js/login.js"></script>
+</body>
+</html>

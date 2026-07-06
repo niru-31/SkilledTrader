@@ -1,0 +1,544 @@
+/* =========================================
+   COURSES PAGE — SkilledTrader
+========================================= */
+
+:root{
+  --green:#2E7D5B;
+  --green-light:#4CAF7A;
+  --green-pale:#E3ECE7;
+  --green-border:rgba(46,125,91,.14);
+
+  --bg:#F5F7F6;
+  --card:#ffffff;
+
+  --text:#1F2A2E;
+  --text-mid:rgba(31,42,46,.65);
+  --text-soft:rgba(31,42,46,.45);
+
+  --shadow:0 10px 30px rgba(0,0,0,.05);
+  --shadow-md:0 16px 40px rgba(0,0,0,.08);
+
+  --radius:20px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.courses-hero{
+  padding:160px 20px 100px;
+  background:
+  linear-gradient(
+    135deg,
+    #eef5f1 0%,
+    #f5f7f6 50%,
+    #e8f2ec 100%
+  );
+
+  position:relative;
+  overflow:hidden;
+}
+
+.courses-hero::before{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  background:rgba(76,175,122,.08);
+  border-radius:50%;
+  right:-150px;
+  top:-120px;
+}
+
+.courses-hero-inner{
+  max-width:1100px;
+  margin:auto;
+  position:relative;
+  z-index:2;
+  text-align:center;
+}
+
+.courses-hero h1{
+  font-size:clamp(2.8rem,5vw,4.8rem);
+  line-height:1.05;
+  margin-bottom:24px;
+  color:var(--text);
+  font-family:'Playfair Display', serif;
+}
+
+.courses-hero p{
+  max-width:760px;
+  margin:auto;
+  font-size:1.05rem;
+  line-height:1.9;
+  color:var(--text-mid);
+}
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.courses-filter-section{
+  padding:40px 20px;
+}
+
+.filter-wrap{
+  background:#fff;
+  border:1px solid var(--green-border);
+  border-radius:24px;
+  padding:24px;
+  box-shadow:var(--shadow);
+}
+
+.search-box input{
+  width:100%;
+  border:none;
+  outline:none;
+  background:#f3f6f4;
+  padding:18px 22px;
+  border-radius:16px;
+  font-size:15px;
+  margin-bottom:20px;
+}
+
+.filter-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.filter-btn{
+  border:none;
+  background:#edf4ef;
+  color:var(--text);
+  padding:12px 18px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+  background:var(--green);
+  color:#fff;
+}
+
+/* =========================================
+   COURSES
+========================================= */
+
+.courses-section{
+  padding:90px 20px;
+}
+
+.courses-grid{
+  margin-top:50px;
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:22px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.course-card{
+  background:#fff;
+  border-radius:28px;
+  overflow:hidden;
+  border:1px solid rgba(0,0,0,.06);
+
+  transition:.4s;
+  box-shadow:var(--shadow);
+}
+
+.course-card:hover{
+  transform:translateY(-8px);
+  box-shadow:var(--shadow-md);
+}
+
+.course-image{
+  height:170px;
+  position:relative;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2E7D5B,
+    #4CAF7A
+  );
+}
+
+.premium-badge{
+  position:absolute;
+  top:18px;
+  left:18px;
+
+  background:#fff;
+  color:var(--green);
+
+  padding:8px 14px;
+  border-radius:999px;
+
+  font-size:12px;
+  font-weight:700;
+}
+
+.course-content{
+  padding:22px;
+}
+
+.course-tag{
+  display:inline-block;
+
+  background:#e9f5ee;
+  color:var(--green);
+
+  padding:8px 14px;
+  border-radius:999px;
+
+  font-size:12px;
+  font-weight:700;
+
+  margin-bottom:18px;
+}
+
+.course-content h3{
+   font-size:22px;
+    line-height:1.2;
+  color:var(--text);
+}
+
+.course-content p{
+  font-size:14px;
+  line-height:1.7;
+  color:var(--text-mid);
+  margin-bottom:24px;
+}
+
+.course-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+
+  margin-bottom:26px;
+
+  font-size:14px;
+  color:var(--text-soft);
+}
+
+.course-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.course-price{
+  font-size:22px;
+  font-weight:700;
+  color:var(--green);
+}
+
+@media(max-width:1100px){
+
+  .courses-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:700px){
+
+  .courses-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn-primary{
+  background:var(--green);
+  color:#fff;
+  text-decoration:none;
+
+  padding:14px 22px;
+  border-radius:14px;
+
+  font-size:14px;
+  font-weight:700;
+
+  transition:.3s;
+}
+
+.btn-primary:hover{
+  background:#266b4e;
+  transform:translateY(-2px);
+}
+
+.btn-secondary{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+
+  color:var(--text);
+
+  text-decoration:none;
+
+  padding:14px 22px;
+  border-radius:14px;
+
+  font-size:14px;
+  font-weight:700;
+
+  transition:.3s;
+}
+
+.btn-secondary:hover{
+  border-color:var(--green);
+  color:var(--green);
+}
+
+/* =========================================
+   PRICING
+========================================= */
+
+.pricing-section{
+  padding:100px 20px;
+  background:#fff;
+}
+
+.pricing-grid{
+  margin-top:60px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.pricing-card{
+  background:#f8fbf9;
+  border-radius:28px;
+  padding:40px 32px;
+
+  border:1px solid rgba(0,0,0,.05);
+
+  transition:.3s;
+}
+
+.pricing-card:hover{
+  transform:translateY(-6px);
+}
+
+.pricing-card.featured{
+  background:linear-gradient(
+    135deg,
+    #2E7D5B,
+    #3f9a71
+  );
+
+  color:#fff;
+}
+
+.pricing-label{
+  display:inline-block;
+
+  background:#fff;
+  color:var(--green);
+
+  padding:8px 14px;
+  border-radius:999px;
+
+  font-size:11px;
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.pricing-card h3{
+  font-size:32px;
+  margin-bottom:16px;
+}
+
+.pricing-price{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:24px;
+}
+
+.pricing-card ul{
+  list-style:none;
+  margin-bottom:30px;
+}
+
+.pricing-card ul li{
+  margin-bottom:14px;
+  font-size:15px;
+  line-height:1.7;
+}
+
+/* =========================================
+   WHY SECTION
+========================================= */
+
+.why-learn-section{
+  padding:100px 20px;
+}
+
+.why-grid{
+  margin-top:60px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:24px;
+}
+
+.why-card{
+  background:#fff;
+  border-radius:24px;
+  padding:36px;
+
+  box-shadow:var(--shadow);
+  transition:.3s;
+}
+
+.why-card:hover{
+  transform:translateY(-6px);
+}
+
+.why-icon{
+  width:70px;
+  height:70px;
+
+  border-radius:20px;
+
+  background:#e8f5ee;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:30px;
+
+  margin-bottom:24px;
+}
+
+.why-card h3{
+  font-size:24px;
+  margin-bottom:14px;
+}
+
+.why-card p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--text-mid);
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.contact-cta{
+  padding:100px 20px;
+}
+
+.cta-box{
+  background:
+  linear-gradient(
+    135deg,
+    #2E7D5B,
+    #3f9a71
+  );
+
+  color:#fff;
+
+  border-radius:36px;
+
+  padding:70px 40px;
+
+  text-align:center;
+}
+
+.cta-box h2{
+  font-size:clamp(2rem,4vw,3.5rem);
+  margin-bottom:20px;
+}
+
+.cta-box p{
+  max-width:700px;
+  margin:auto auto 34px;
+
+  line-height:1.9;
+  font-size:16px;
+}
+
+/* =========================================
+   SHARED
+========================================= */
+
+.max-w{
+  max-width:1200px;
+  margin:auto;
+}
+
+.sec-eyebrow{
+  color:var(--green);
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:13px;
+  margin-bottom:16px;
+}
+
+.sec-title{
+  font-size:clamp(2rem,4vw,3.5rem);
+  line-height:1.1;
+  color:var(--text);
+  font-family:'Playfair Display', serif;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+  background:#1F2A2E;
+  color:rgba(255,255,255,.6);
+
+  text-align:center;
+  padding:30px 20px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+  .courses-hero{
+    padding-top:130px;
+  }
+
+  .course-content h3{
+    font-size:24px;
+  }
+
+  .pricing-price{
+    font-size:40px;
+  }
+
+  .course-bottom{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+  }
+
+}
+

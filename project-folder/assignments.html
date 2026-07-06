@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments | SkilledTrader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/assignments.css">
+</head>
+<body>
+
+<div class="assignments-page">
+
+  <header class="assignments-header">
+    <div>
+      <p class="eyebrow">Student Portal</p>
+      <h1>Assignments</h1>
+      <span>Submit your tasks, track scores, and review mentor feedback.</span>
+    </div>
+
+    <a href="dashboard.html" class="back-btn">← Dashboard</a>
+  </header>
+
+  <section class="assignment-stats">
+
+    <div class="stat-card">
+      <h2>6</h2>
+      <p>Total Assignments</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>3</h2>
+      <p>Pending</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>2</h2>
+      <p>Submitted</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>8.5</h2>
+      <p>Average Score</p>
+    </div>
+
+  </section>
+
+  <section class="filter-section">
+
+    <input type="text" id="assignmentSearch" placeholder="Search assignments...">
+
+    <div class="filter-buttons">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Pending</button>
+      <button class="filter-btn">Submitted</button>
+      <button class="filter-btn">Reviewed</button>
+    </div>
+
+  </section>
+
+  <section class="assignments-grid">
+
+    <div class="assignment-card" data-status="pending">
+
+      <div class="assignment-top">
+        <span class="badge pending">Pending</span>
+        <small>Due: 25 May 2026</small>
+      </div>
+
+      <h3>Risk Management Journal</h3>
+
+      <p>
+        Write your risk rules, capital protection plan, and maximum loss limit for one trading week.
+      </p>
+
+      <div class="assignment-meta">
+        <span>Foundation Program</span>
+        <span>Module 03</span>
+      </div>
+
+      <label class="upload-box">
+        <input type="file">
+        📤 Upload Assignment
+      </label>
+
+    </div>
+
+    <div class="assignment-card" data-status="submitted">
+
+      <div class="assignment-top">
+        <span class="badge submitted">Submitted</span>
+        <small>Submitted: 20 May 2026</small>
+      </div>
+
+      <h3>Support & Resistance Analysis</h3>
+
+      <p>
+        Mark support and resistance zones on a chart and explain your reasoning.
+      </p>
+
+      <div class="assignment-meta">
+        <span>Technical Analysis</span>
+        <span>Module 04</span>
+      </div>
+
+      <button class="view-btn">View Submission</button>
+
+    </div>
+
+    <div class="assignment-card" data-status="reviewed">
+
+      <div class="assignment-top">
+        <span class="badge reviewed">Reviewed</span>
+        <small>Score: 8/10</small>
+      </div>
+
+      <h3>Candlestick Pattern Practice</h3>
+
+      <p>
+        Identify 5 candle patterns and explain what each pattern shows about price behavior.
+      </p>
+
+      <div class="feedback-box">
+        <strong>Mentor Feedback:</strong>
+        Good explanation. Improve chart marking clarity.
+      </div>
+
+      <button class="view-btn">View Feedback</button>
+
+    </div>
+
+    <div class="assignment-card" data-status="pending">
+
+      <div class="assignment-top">
+        <span class="badge pending">Pending</span>
+        <small>Due: 30 May 2026</small>
+      </div>
+
+      <h3>Trading Psychology Reflection</h3>
+
+      <p>
+        Write how emotions affect trading decisions and how you will control them.
+      </p>
+
+      <div class="assignment-meta">
+        <span>Foundation Program</span>
+        <span>Module 06</span>
+      </div>
+
+      <label class="upload-box">
+        <input type="file">
+        📤 Upload Assignment
+      </label>
+
+    </div>
+
+  </section>
+
+</div>
+
+<script src="/js/assignments.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Foundation Program Payment | SkilledTrader</title>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/payment-foundation.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="payment-page">
+
+  <div class="payment-card">
+
+    <div class="course-info">
+
+      <div class="course-badge" id="courseCategory">
+      Loading...
+      </div>
+
+    <h1 id="courseTitle">
+    Loading Course...
+    </h1>
+
+    <p id="courseDescription">
+      Loading description...
+    </p>
+
+      <div class="features">
+
+        <div>✓ 8 Premium Modules</div>
+        <div>✓ Downloadable Notes</div>
+        <div>✓ Assignments</div>
+        <div>✓ Certificate</div>
+        <div>✓ Lifetime Access</div>
+
+      </div>
+
+    </div>
+
+    <div class="checkout-box">
+
+      <h2>Complete Payment</h2>
+
+      <div class="price-box">
+
+        <span>Total Amount</span>
+
+        <h3 id="coursePrice">₹0</h3>
+
+      </div>
+
+      <input
+        type="text"
+        placeholder="Full Name"
+        id="studentName"
+      >
+
+      <input
+        type="email"
+        placeholder="Email Address"
+        id="studentEmail"
+      >
+
+      <input
+        type="tel"
+        placeholder="Mobile Number"
+        id="studentPhone"
+      >
+
+      <button id="payBtn">
+        Pay Now
+      </button>
+
+      <p class="secure">
+        🔒 Secure Payment Powered by Razorpay
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="success-popup" id="successPopup">
+
+  <div class="success-card">
+
+    <div class="success-icon">
+      ✓
+    </div>
+
+    <h2>
+      Payment Successful
+    </h2>
+
+    <p>
+      Your Foundation Program access has been activated.
+      Redirecting to your course...
+    </p>
+
+    <button id="goCourseBtn">
+      Go To Foundation Program
+    </button>
+
+  </div>
+
+</div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/payment-foundation.js"></script>
+
+</body>
+</html>

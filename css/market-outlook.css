@@ -1,0 +1,477 @@
+/* =========================================
+   MARKET OUTLOOK PAGE
+========================================= */
+
+.market-hero{
+  padding:140px 40px 100px;
+  background:linear-gradient(
+    135deg,
+    #f8fffb,
+    #eef8f1
+  );
+}
+
+.market-inner{
+  max-width:1300px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:60px;
+  align-items:center;
+}
+
+.market-badge{
+  display:inline-block;
+
+  background:#EAF6EF;
+
+  color:#2E7D5B;
+
+  padding:10px 18px;
+
+  border-radius:999px;
+
+  font-size:14px;
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.market-left h1{
+  font-size:72px;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.market-left h1 span{
+  color:#2E7D5B;
+}
+
+.market-left p{
+  font-size:18px;
+  color:#666;
+  line-height:1.8;
+  margin-bottom:35px;
+  max-width:650px;
+}
+
+/* BUTTONS */
+
+.market-actions{
+  display:flex;
+  gap:16px;
+}
+
+.btn-primary{
+  background:#2E7D5B;
+  color:#fff;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:12px;
+  font-weight:600;
+}
+
+.btn-secondary{
+  background:#fff;
+  color:#111;
+  text-decoration:none;
+  padding:14px 28px;
+  border-radius:12px;
+  border:1px solid #ddd;
+}
+
+/* SUMMARY CARD */
+
+.market-summary-card{
+  background:#fff;
+  border-radius:28px;
+  padding:35px;
+  box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.summary-top{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.summary-top span{
+  color:#666;
+}
+
+.summary-top strong{
+  color:#2E7D5B;
+}
+
+.sentiment-box{
+  padding:16px;
+  border-radius:16px;
+  text-align:center;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.bullish{
+  background:#EAF6EF;
+  color:#2E7D5B;
+}
+
+.summary-list div{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 0;
+  border-bottom:1px solid #eee;
+}
+
+.summary-list div:last-child{
+  border-bottom:none;
+}
+
+.summary-list span{
+  color:#666;
+}
+
+/* COMMON */
+
+.max-w{
+  max-width:1300px;
+  margin:auto;
+}
+
+.section-tag{
+  color:#2E7D5B;
+  font-size:14px;
+  font-weight:700;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.section-title{
+  font-size:48px;
+  margin-bottom:50px;
+}
+
+section{
+  padding:100px 40px;
+}
+
+/* OUTLOOK */
+
+.outlook-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+
+.outlook-card{
+  background:#fff;
+  padding:30px;
+  border-radius:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.card-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.card-top span{
+  color:#2E7D5B;
+  font-size:13px;
+  font-weight:700;
+}
+
+.outlook-card p{
+  color:#666;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.levels-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+
+.levels-grid div{
+  background:#f8faf8;
+  padding:15px;
+  border-radius:14px;
+  text-align:center;
+}
+
+.levels-grid span{
+  display:block;
+  color:#666;
+  margin-bottom:6px;
+  font-size:13px;
+}
+
+/* WATCHLIST */
+
+.watchlist-section{
+  background:#f8faf8;
+}
+
+.watchlist-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+
+.watch-card{
+  background:#fff;
+  padding:28px;
+  border-radius:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+  transition:.3s;
+}
+
+.watch-card:hover{
+  transform:translateY(-6px);
+}
+
+.watch-card span{
+  color:#2E7D5B;
+  font-size:13px;
+  font-weight:700;
+}
+
+.watch-card h3{
+  margin:16px 0 10px;
+}
+
+.watch-card p{
+  color:#666;
+  line-height:1.8;
+}
+
+/* LEVEL TABLE */
+
+.levels-table{
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.table-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:18px 24px;
+  border-bottom:1px solid #eee;
+}
+
+.table-row:last-child{
+  border-bottom:none;
+}
+
+.table-head{
+  background:#2E7D5B;
+  color:#fff;
+  font-weight:700;
+}
+
+/* DOWNLOAD */
+
+.download-section{
+  background:#f8faf8;
+}
+
+.download-card{
+  max-width:1200px;
+  margin:auto;
+
+  background:#fff;
+
+  border-radius:28px;
+
+  padding:40px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.download-card h2{
+  margin:12px 0;
+}
+
+.download-card p{
+  color:#666;
+  max-width:600px;
+}
+
+.download-btn{
+  background:#2E7D5B;
+  color:#fff;
+  text-decoration:none;
+  padding:16px 28px;
+  border-radius:12px;
+  font-weight:700;
+}
+
+/* CTA */
+
+.market-cta{
+  background:#fff;
+  padding:80px 40px;
+}
+
+.cta-card{
+  max-width:1100px;
+  margin:auto;
+
+  background:linear-gradient(
+    135deg,
+    #2E7D5B,
+    #3F9A6E
+  );
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:80px 40px;
+
+  border-radius:28px;
+}
+
+.cta-card h2{
+  font-size:48px;
+  margin-bottom:18px;
+}
+
+.cta-card p{
+  font-size:18px;
+  opacity:.9;
+  margin-bottom:30px;
+}
+
+.cta-card a{
+  display:inline-block;
+  background:#fff;
+  color:#2E7D5B;
+  text-decoration:none;
+  padding:16px 32px;
+  border-radius:14px;
+  font-weight:700;
+}
+
+/* FOOTER */
+
+.footer{
+  background:transparent;
+  padding:0 20px 40px;
+}
+
+.footer-content{
+  max-width:1600px;
+  margin:auto;
+
+  background:#101514;
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:60px 30px;
+
+  border-radius:20px;
+}
+
+.footer-content h3{
+  font-size:30px;
+  margin-bottom:12px;
+}
+
+.footer-content p{
+  opacity:.7;
+  margin-bottom:25px;
+}
+
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+}
+
+.footer-links a{
+  color:#fff;
+  text-decoration:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+  .market-inner{
+    grid-template-columns:1fr;
+  }
+
+  .outlook-grid{
+    grid-template-columns:1fr;
+  }
+
+  .watchlist-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .download-card{
+    flex-direction:column;
+    gap:25px;
+    text-align:center;
+  }
+
+}
+
+@media(max-width:768px){
+
+  section{
+    padding:70px 20px;
+  }
+
+  .market-hero{
+    padding:120px 20px 70px;
+  }
+
+  .market-left h1{
+    font-size:48px;
+  }
+
+  .market-actions{
+    flex-direction:column;
+  }
+
+  .watchlist-grid{
+    grid-template-columns:1fr;
+  }
+
+  .levels-grid{
+    grid-template-columns:1fr;
+  }
+
+  .table-row{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .section-title{
+    font-size:34px;
+  }
+
+  .cta-card h2{
+    font-size:36px;
+  }
+
+  .footer-links{
+    flex-direction:column;
+    gap:12px;
+  }
+
+}

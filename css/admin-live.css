@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+
+body{
+
+    background:#f5f7fb;
+    color:#222;
+
+}
+
+.admin-page{
+
+    max-width:1400px;
+    margin:auto;
+    padding:40px;
+
+}
+
+.admin-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+
+}
+
+.admin-header p{
+
+    color:#1b8c5f;
+    font-weight:600;
+    margin-bottom:8px;
+
+}
+
+.admin-header h1{
+
+    font-size:38px;
+    margin-bottom:8px;
+
+}
+
+.admin-header span{
+
+    color:#666;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+    background:#1b8c5f;
+    color:white;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#146b48;
+
+}
+
+.admin-grid{
+
+    display:grid;
+    grid-template-columns:420px 1fr;
+    gap:30px;
+
+}
+
+.admin-card{
+
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.admin-card h2{
+
+    margin-bottom:25px;
+    font-size:24px;
+
+}
+
+label{
+
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:600;
+
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:.3s;
+
+}
+
+textarea{
+
+    resize:none;
+    height:110px;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:#1b8c5f;
+
+}
+
+button{
+
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#1b8c5f;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#146b48;
+
+}
+
+#liveSessionsList{
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+
+}
+
+.session-card{
+
+    border:1px solid #eee;
+    border-radius:14px;
+    padding:20px;
+
+}
+
+.session-card h3{
+
+    margin-bottom:8px;
+
+}
+
+.session-card p{
+
+    margin:6px 0;
+    color:#555;
+
+}
+
+.status{
+
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 14px;
+    border-radius:40px;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.status.upcoming{
+
+    background:#fff7d6;
+    color:#b07d00;
+
+}
+
+.status.live{
+
+    background:#d9ffe8;
+    color:#11834f;
+
+}
+
+.status.ended{
+
+    background:#ffe4e4;
+    color:#b10000;
+
+}
+
+.action-buttons{
+
+    margin-top:18px;
+    display:flex;
+    gap:12px;
+
+}
+
+.start-btn{
+
+    background:#1b8c5f;
+
+}
+
+.end-btn{
+
+    background:#d9363e;
+
+}
+
+.delete-btn{
+
+    background:#555;
+
+}
+
+.start-btn,
+.end-btn,
+.delete-btn{
+
+    flex:1;
+
+}
+
+@media(max-width:980px){
+
+.admin-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.admin-header{
+
+flex-direction:column;
+align-items:flex-start;
+gap:20px;
+
+}
+
+}

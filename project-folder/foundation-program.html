@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Foundation Program — SkilledTrader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/foundation-program.css">
+</head>
+
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-mark">ST</div>
+    <span class="nav-logo-text">Skilled<span>Trader</span></span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="courses.html" class="nav-cta">All Courses</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+</nav>
+
+<main class="foundation-page">
+
+  <section class="foundation-player-section">
+
+    <div class="foundation-player-grid">
+
+      <div class="video-area">
+
+        <div class="course-label" id="courseLabel">
+          <span></span>
+          Premium Program · Foundation Level
+        </div>
+
+        <h1 id="courseTitle">
+          Foundation <span>Program</span>
+        </h1>
+
+        <p class="course-subtitle" id="courseSubtitle">
+          Build your stock market foundation with structured lessons,
+          assignments, risk management, chart reading, and trading psychology.
+        </p>
+
+        <div class="main-video-card">
+
+          <div class="video-topbar">
+            <span id="nowPlaying">Now Playing</span>
+            <small id="lessonMeta">Select a chapter</small>
+          </div>
+
+          <div class="video-box">
+  <iframe
+    id="courseVideoFrame"
+    src=""
+    width="100%"
+    height="100%"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+</div>
+
+        </div>
+
+        <div class="lesson-details">
+
+          <div>
+            <div class="sec-eyebrow">
+              Current Lesson
+            </div>
+
+            <h2 id="lessonTitle">
+              Select a Chapter
+            </h2>
+
+            <p id="lessonDescription">
+              Choose a chapter from the course content to start learning.
+            </p>
+          </div>
+
+          <button class="mark-complete-btn" id="markCompleteBtn">
+            Mark Chapter as Complete
+          </button>
+
+          <div class="chapter-actions">
+  <button id="viewNotesBtn">
+    View Notes
+  </button>
+
+  <button id="viewAssignmentBtn">
+    View Assignment
+  </button>
+</div>
+
+        </div>
+
+      </div>
+
+      <aside class="course-sidebar">
+
+        <div class="progress-box">
+
+          <div class="progress-top">
+            <span>Your Progress</span>
+            <strong id="progressPercent">0%</strong>
+          </div>
+
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+
+          <p id="progressText">
+            0 chapters completed
+          </p>
+
+        </div>
+
+        <div class="modules-box">
+
+          <h3>Course Content</h3>
+
+          <div id="modulesContainer">
+
+            <div class="module-group active">
+
+              <button class="module-title">
+                <span>Loading...</span>
+                Course Content
+              </button>
+
+              <div class="chapter-items">
+
+                <button class="chapter-item active">
+                  <span>○</span>
+                  Loading chapters...
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </section>
+
+  <section class="foundation-assignments">
+
+    <div class="max-w">
+
+      <div class="sec-eyebrow">
+        Assignments
+      </div>
+
+      <h2 class="sec-title">
+        Practice Work
+      </h2>
+
+      <div class="assignment-grid" id="assignmentsContainer">
+
+        <div class="assignment-card">
+          <h3>Loading Assignments...</h3>
+          <p>Assignments will appear here.</p>
+          <a href="#">Coming Soon</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="foundation-notes">
+
+    <div class="max-w">
+
+      <div class="sec-eyebrow">
+        Study Material
+      </div>
+
+      <h2 class="sec-title">
+        Download Program Notes
+      </h2>
+
+      <div class="notes-grid" id="notesContainer">
+
+        <div class="note-card">
+          <h3>Loading Notes...</h3>
+          <p>Study material will appear here.</p>
+          <a href="#">Coming Soon</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="foundation-certificate">
+
+    <div class="max-w certificate-grid">
+
+      <div class="certificate-content">
+
+        <div class="sec-eyebrow">
+          Certificate
+        </div>
+
+        <h2 class="sec-title">
+          Unlock Your Foundation Certificate
+        </h2>
+
+        <p id="certificateText">
+          Complete all chapters and practice assignments to unlock your SkilledTrader completion certificate.
+        </p>
+
+        <ul>
+          <li>✔ Completion Certificate</li>
+          <li>✔ Assignment Based Learning</li>
+          <li>✔ Resume Friendly</li>
+          <li>✔ LinkedIn Showcase Ready</li>
+        </ul>
+
+      </div>
+
+      <div class="certificate-card locked-certificate" id="certificateCard">
+
+        <div class="certificate-inner">
+
+          <span>
+            CERTIFICATE OF COMPLETION
+          </span>
+
+          <h3 id="certificateCourseName">
+            Foundation Program
+          </h3>
+
+          <p>
+            This certifies that
+          </p>
+
+          <h4 id="certificateStudentName">
+            Student Name
+          </h4>
+
+          <p>
+            has successfully completed the SkilledTrader course.
+          </p>
+
+          <strong>
+            SkilledTrader
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    <section class="foundation-cta">
+
+    <div class="max-w">
+
+      <div class="cta-card">
+
+        <h2>
+          Need Help During Learning?
+        </h2>
+
+        <p>
+          Join the SkilledTrader community and get support while completing your learning journey.
+        </p>
+
+        <a href="contact.html" class="btn-primary">
+          Contact Mentor
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="resource-modal" id="resourceModal">
+
+    <div class="resource-box">
+
+      <button id="closeResourceBtn">
+        ✕
+      </button>
+
+      <iframe
+        id="resourceFrame"
+        src=""
+        width="100%"
+        height="600"
+        frameborder="0">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      <span>ST</span>
+      SkilledTrader
+    </div>
+
+    <p>
+      Learn. Build. Grow.
+    </p>
+
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <small>
+      © 2026 SkilledTrader. All rights reserved.
+    </small>
+
+  </div>
+
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/foundation-program.js"></script>
+
+</body>
+</html>

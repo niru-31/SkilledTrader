@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Add Course Content | SkilledTrader</title>
+
+  <link rel="stylesheet" href="/css/admin-conten.css">
+</head>
+<body>
+
+  <div class="admin-page">
+
+    <div class="admin-card">
+
+      <h1>Add Course Content</h1>
+
+      <p>
+        Add chapter video, notes and assignment using Google Drive preview links.
+      </p>
+
+      <form id="contentForm">
+
+        <label>Course</label>
+        <select id="courseSelect" required>
+          <option value="">Loading courses...</option>
+        </select>
+
+        <label>Module Title</label>
+        <input
+          type="text"
+          id="moduleTitle"
+          placeholder="Market Foundation"
+          required
+        >
+
+        <label>Chapter Title</label>
+        <input
+          type="text"
+          id="chapterTitle"
+          placeholder="What is Stock Market?"
+          required
+        >
+
+        <label>Description</label>
+        <textarea
+          id="chapterDescription"
+          placeholder="Chapter description..."
+        ></textarea>
+
+        <label>Google Drive Video Preview Link</label>
+        <input
+          type="url"
+          id="videoUrl"
+          placeholder="https://drive.google.com/file/d/FILE_ID/preview"
+          required
+        >
+
+        <label>Google Drive Notes Preview Link</label>
+        <input
+          type="url"
+          id="notesUrl"
+          placeholder="https://drive.google.com/file/d/FILE_ID/preview"
+        >
+
+        <label>Google Drive Assignment Preview Link</label>
+        <input
+          type="url"
+          id="assignmentUrl"
+          placeholder="https://drive.google.com/file/d/FILE_ID/preview"
+        >
+
+        <label>Duration</label>
+        <input
+          type="text"
+          id="duration"
+          placeholder="10 min"
+        >
+
+        <label>Order</label>
+        <input
+          type="number"
+          id="order"
+          placeholder="1"
+          required
+        >
+
+        <button type="submit">
+          Save Chapter
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="/js/admin-content.js"></script>
+
+</body>
+</html>

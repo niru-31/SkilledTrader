@@ -1,0 +1,356 @@
+/* =========================================
+   RESET
+========================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --green:#2E7D5B;
+  --green-light:#4CAF7A;
+  --bg:#F5F7F6;
+  --text:#1F2A2E;
+  --text-mid:rgba(31,42,46,.65);
+  --card:#ffffff;
+  --shadow:0 20px 60px rgba(0,0,0,.08);
+  --radius:24px;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:linear-gradient(135deg,#F5F7F6 0%,#EDF4F0 100%);
+  min-height:100vh;
+  color:var(--text);
+}
+
+/* =========================================
+   PAGE
+========================================= */
+
+.payment-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:50px 20px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.payment-card{
+  width:100%;
+  max-width:1200px;
+  background:#fff;
+  border-radius:32px;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:1fr 420px;
+  box-shadow:var(--shadow);
+}
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.course-info{
+  padding:60px;
+  position:relative;
+}
+
+.course-info::before{
+  content:"";
+  position:absolute;
+  top:-100px;
+  right:-100px;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  background:rgba(46,125,91,.08);
+}
+
+.course-badge{
+  display:inline-block;
+  background:#EAF5EF;
+  color:var(--green);
+  padding:10px 16px;
+  border-radius:100px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:24px;
+}
+
+.course-info h1{
+  font-size:48px;
+  line-height:1.15;
+  margin-bottom:18px;
+}
+
+.course-info p{
+  color:var(--text-mid);
+  line-height:1.8;
+  max-width:520px;
+  margin-bottom:35px;
+}
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.features div{
+  background:#F8FAF9;
+  padding:16px 18px;
+  border-radius:14px;
+  font-weight:600;
+  border:1px solid rgba(46,125,91,.08);
+}
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.checkout-box{
+  background:#F8FAF9;
+  padding:50px 35px;
+  display:flex;
+  flex-direction:column;
+}
+
+.checkout-box h2{
+  text-align:center;
+  margin-bottom:25px;
+  font-size:28px;
+}
+
+/* =========================================
+   PRICE BOX
+========================================= */
+
+.price-box{
+  background:#fff;
+  border-radius:20px;
+  text-align:center;
+  padding:25px;
+  margin-bottom:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.price-box span{
+  color:var(--text-mid);
+  font-size:14px;
+}
+
+.price-box h3{
+  margin-top:10px;
+  font-size:46px;
+  color:var(--green);
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.checkout-box input{
+  width:100%;
+  height:56px;
+  border:none;
+  border-radius:12px;
+  padding:0 18px;
+  margin-bottom:14px;
+  background:#fff;
+  font-size:15px;
+  outline:none;
+  border:1px solid transparent;
+  transition:.25s;
+}
+
+.checkout-box input:focus{
+  border-color:var(--green);
+}
+
+/* =========================================
+   PAY BUTTON
+========================================= */
+
+#payBtn{
+  width:100%;
+  height:58px;
+  margin-top:10px;
+  border:none;
+  border-radius:14px;
+  background:var(--green);
+  color:#fff;
+  font-size:17px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s;
+}
+
+#payBtn:hover{
+  background:var(--green-light);
+  transform:translateY(-2px);
+}
+
+#payBtn:disabled{
+  opacity:.75;
+  cursor:not-allowed;
+  transform:none;
+}
+
+/* =========================================
+   SECURITY TEXT
+========================================= */
+
+.secure{
+  text-align:center;
+  margin-top:18px;
+  color:var(--text-mid);
+  font-size:13px;
+}
+
+/* =========================================
+   TRUST SECTION
+========================================= */
+
+.trust-box{
+  margin-top:25px;
+  text-align:center;
+  color:var(--text-mid);
+  font-size:13px;
+}
+
+.trust-icons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:12px;
+}
+
+.trust-icons span{
+  background:#fff;
+  padding:8px 12px;
+  border-radius:10px;
+  font-weight:600;
+}
+
+/* =========================================
+   SUCCESS POPUP
+========================================= */
+
+.success-popup{
+  position:fixed;
+  inset:0;
+  background:rgba(31,42,46,.45);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+  padding:20px;
+}
+
+.success-popup.show{
+  display:flex;
+}
+
+.success-card{
+  width:90%;
+  max-width:430px;
+  background:#fff;
+  border-radius:26px;
+  padding:42px 34px;
+  text-align:center;
+  box-shadow:0 25px 80px rgba(0,0,0,.18);
+}
+
+.success-icon{
+  width:74px;
+  height:74px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  background:#EAF6EF;
+  color:#2E7D5B;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+  font-weight:800;
+}
+
+.success-card h2{
+  color:#1F2A2E;
+  margin-bottom:12px;
+}
+
+.success-card p{
+  color:rgba(31,42,46,.65);
+  line-height:1.7;
+  margin-bottom:24px;
+}
+
+.success-card button{
+  border:none;
+  background:#2E7D5B;
+  color:#fff;
+  padding:14px 22px;
+  border-radius:12px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.success-card button:hover{
+  background:#25684b;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:960px){
+  .payment-card{
+    grid-template-columns:1fr;
+  }
+
+  .course-info{
+    padding:40px;
+  }
+}
+
+@media(max-width:600px){
+  .payment-page{
+    padding:25px 14px;
+  }
+
+  .course-info{
+    padding:30px 22px;
+  }
+
+  .course-info h1{
+    font-size:34px;
+  }
+
+  .checkout-box{
+    padding:30px 20px;
+  }
+
+  .price-box h3{
+    font-size:38px;
+  }
+
+  .success-card{
+    padding:34px 24px;
+  }
+}

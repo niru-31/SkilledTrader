@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Notifications | SkilledTrader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/notifications.css">
+</head>
+<body>
+
+<div class="notifications-page">
+
+  <header class="notifications-header">
+    <div>
+      <p class="eyebrow">Student Portal</p>
+      <h1>Notifications</h1>
+      <span>Track assignments, live sessions, certificates and platform updates.</span>
+    </div>
+
+    <a href="dashboard.html" class="back-btn">← Dashboard</a>
+  </header>
+
+  <section class="notification-stats">
+    <div class="stat-card">
+      <h2>5</h2>
+      <p>Unread</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>12</h2>
+      <p>Total Alerts</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>3</h2>
+      <p>Assignments</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>2</h2>
+      <p>Live Sessions</p>
+    </div>
+  </section>
+
+  <section class="filter-section">
+    <input type="text" id="notificationSearch" placeholder="Search notifications...">
+
+    <div class="filter-buttons">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Unread</button>
+      <button class="filter-btn">Assignments</button>
+      <button class="filter-btn">Live</button>
+      <button class="filter-btn">Certificates</button>
+    </div>
+  </section>
+
+  <section class="notifications-list">
+
+    <div class="notification-card unread" data-category="assignments">
+      <div class="notify-icon assignment">📝</div>
+
+      <div class="notify-content">
+        <div class="notify-top">
+          <h3>New Assignment Added</h3>
+          <span>Unread</span>
+        </div>
+
+        <p>Technical Analysis Assignment #4 is now available.</p>
+        <small>10 minutes ago</small>
+      </div>
+    </div>
+
+    <div class="notification-card unread" data-category="live">
+      <div class="notify-icon live">🎥</div>
+
+      <div class="notify-content">
+        <div class="notify-top">
+          <h3>Live Session Reminder</h3>
+          <span>Unread</span>
+        </div>
+
+        <p>Support & Resistance live class starts at 7:00 PM.</p>
+        <small>1 hour ago</small>
+      </div>
+    </div>
+
+    <div class="notification-card" data-category="certificates">
+      <div class="notify-icon certificate">🏆</div>
+
+      <div class="notify-content">
+        <div class="notify-top">
+          <h3>Certificate Earned</h3>
+          <span class="read">Read</span>
+        </div>
+
+        <p>Your Foundation Program certificate is ready.</p>
+        <small>Yesterday</small>
+      </div>
+    </div>
+
+    <div class="notification-card unread" data-category="assignments">
+      <div class="notify-icon assignment">📌</div>
+
+      <div class="notify-content">
+        <div class="notify-top">
+          <h3>Assignment Deadline</h3>
+          <span>Unread</span>
+        </div>
+
+        <p>Risk Management Journal is due tomorrow.</p>
+        <small>2 hours ago</small>
+      </div>
+    </div>
+
+    <div class="notification-card" data-category="live">
+      <div class="notify-icon live">📊</div>
+
+      <div class="notify-content">
+        <div class="notify-top">
+          <h3>Market Outlook Uploaded</h3>
+          <span class="read">Read</span>
+        </div>
+
+        <p>This week’s Nifty and BankNifty outlook is now live.</p>
+        <small>2 days ago</small>
+      </div>
+    </div>
+
+  </section>
+
+  <button class="mark-all-btn" id="markAllBtn">
+    Mark All As Read
+  </button>
+
+</div>
+
+<script src="/js/notifications.js"></script>
+
+</body>
+</html>

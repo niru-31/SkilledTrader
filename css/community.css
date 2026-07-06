@@ -1,0 +1,438 @@
+/* =========================================
+   COMMUNITY PAGE
+========================================= */
+
+.community-hero{
+  padding:140px 40px 100px;
+  background:linear-gradient(
+    135deg,
+    #f8fffb,
+    #eef8f1
+  );
+}
+
+.community-inner{
+  max-width:1300px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:60px;
+  align-items:center;
+}
+
+.community-badge{
+  display:inline-block;
+
+  background:#EAF6EF;
+
+  color:#2E7D5B;
+
+  padding:10px 18px;
+
+  border-radius:999px;
+
+  font-size:14px;
+  font-weight:700;
+
+  margin-bottom:20px;
+}
+
+.community-left h1{
+  font-size:72px;
+  line-height:1.1;
+
+  margin-bottom:20px;
+}
+
+.community-left h1 span{
+  color:#2E7D5B;
+}
+
+.community-left p{
+  font-size:18px;
+
+  color:#666;
+
+  line-height:1.8;
+
+  max-width:650px;
+
+  margin-bottom:35px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:16px;
+}
+
+.primary-btn{
+  background:#2E7D5B;
+  color:#fff;
+
+  text-decoration:none;
+
+  padding:14px 26px;
+
+  border-radius:12px;
+
+  font-weight:600;
+}
+
+.secondary-btn{
+  background:#fff;
+
+  color:#111;
+
+  text-decoration:none;
+
+  padding:14px 26px;
+
+  border-radius:12px;
+
+  border:1px solid #ddd;
+}
+
+.community-card{
+  background:#fff;
+
+  border-radius:28px;
+
+  padding:35px;
+
+  box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.community-stat{
+  background:#f7faf8;
+
+  padding:20px;
+
+  border-radius:18px;
+}
+
+.community-stat h2{
+  color:#2E7D5B;
+
+  font-size:34px;
+
+  margin-bottom:5px;
+}
+
+.community-stat p{
+  color:#666;
+}
+
+/* =========================================
+   COMMON
+========================================= */
+
+.max-w{
+  max-width:1300px;
+  margin:auto;
+}
+
+.section-tag{
+  color:#2E7D5B;
+
+  font-size:14px;
+  font-weight:700;
+
+  text-transform:uppercase;
+
+  margin-bottom:10px;
+}
+
+.section-title{
+  font-size:48px;
+
+  margin-bottom:50px;
+}
+
+section{
+  padding:100px 40px;
+}
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.benefits-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:24px;
+}
+
+.benefit-card{
+  background:#fff;
+
+  padding:30px;
+
+  border-radius:24px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.05);
+
+  transition:.3s;
+}
+
+.benefit-card:hover{
+  transform:translateY(-6px);
+}
+
+.icon{
+  font-size:42px;
+
+  margin-bottom:18px;
+}
+
+.benefit-card h3{
+  margin-bottom:12px;
+}
+
+.benefit-card p{
+  color:#666;
+
+  line-height:1.8;
+}
+
+/* =========================================
+   RULES
+========================================= */
+
+.rules-section{
+  background:#f8faf8;
+}
+
+.rules-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:20px;
+}
+
+.rule-card{
+  background:#fff;
+
+  padding:24px;
+
+  border-radius:18px;
+
+  text-align:center;
+
+  font-weight:600;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.04);
+}
+
+/* =========================================
+   ACTIVITIES
+========================================= */
+
+.activity-timeline{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+}
+
+.activity-item{
+  background:#fff;
+
+  border-radius:20px;
+
+  padding:24px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:25px;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.05);
+}
+
+.day{
+  min-width:120px;
+
+  background:#2E7D5B;
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:12px;
+
+  border-radius:12px;
+
+  font-weight:700;
+}
+
+.content{
+  font-size:18px;
+
+  font-weight:600;
+}
+
+.activity-item.active{
+  border-left:5px solid #2E7D5B;
+}
+
+.rule-card{
+  cursor:pointer;
+}
+
+.benefit-card{
+  cursor:pointer;
+}
+/* =========================================
+   JOIN
+========================================= */
+
+.join-section{
+  background:linear-gradient(
+    135deg,
+    #2E7D5B,
+    #3F9A6E
+  );
+
+  padding:60px 40px;
+  margin-bottom:20px;
+}
+
+.join-card{
+  max-width:850px;
+
+  margin:auto;
+
+  text-align:center;
+
+  color:#fff;
+}
+
+.join-card h2{
+  font-size:42px;
+
+  margin-bottom:14px;
+}
+
+.join-card p{
+  font-size:16px;
+
+  margin-bottom:25px;
+
+  opacity:.9;
+}
+
+.join-btn{
+  display:inline-block;
+
+  background:#fff;
+
+  color:#2E7D5B;
+
+  text-decoration:none;
+
+  padding:14px 28px;
+
+  border-radius:14px;
+
+  font-weight:700;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+  background:#1F2A2E;
+  color:rgba(255,255,255,.6);
+
+  text-align:center;
+  padding:30px 20px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:1100px){
+
+  .community-inner{
+    grid-template-columns:1fr;
+  }
+
+  .benefits-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .rules-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:768px){
+
+  section{
+    padding:70px 20px;
+  }
+
+  .community-hero{
+    padding:120px 20px 70px;
+  }
+
+  .community-left h1{
+    font-size:48px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .benefits-grid,
+  .rules-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-title{
+    font-size:34px;
+  }
+
+  .activity-item{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .day{
+    min-width:auto;
+  }
+
+  .join-card h2{
+    font-size:38px;
+  }
+
+  .footer-links{
+    flex-direction:column;
+
+    gap:12px;
+  }
+
+}

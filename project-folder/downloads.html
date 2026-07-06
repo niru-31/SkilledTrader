@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Downloads | SkilledTrader</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/downloads.css">
+
+</head>
+<body>
+
+<div class="downloads-page">
+
+  <header class="downloads-header">
+
+    <div>
+      <p class="eyebrow">Student Portal</p>
+
+      <h1>Downloads</h1>
+
+      <span>
+        Access your course notes, PDFs, templates and learning resources.
+      </span>
+    </div>
+
+    <a href="dashboard.html" class="back-btn">
+      ← Dashboard
+    </a>
+
+  </header>
+
+  <section class="download-stats">
+
+    <div class="stat-card">
+      <h2>18</h2>
+      <p>Total Resources</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>12</h2>
+      <p>Downloaded</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>4</h2>
+      <p>Course PDFs</p>
+    </div>
+
+    <div class="stat-card">
+      <h2>2</h2>
+      <p>Locked Files</p>
+    </div>
+
+  </section>
+
+  <section class="filter-section">
+
+    <input
+      type="text"
+      id="downloadSearch"
+      placeholder="Search downloads..."
+    >
+
+    <div class="filter-buttons">
+
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Foundation</button>
+      <button class="filter-btn">Technical</button>
+      <button class="filter-btn">Bootcamp</button>
+      <button class="filter-btn">Locked</button>
+
+    </div>
+
+  </section>
+
+  <section class="downloads-grid">
+
+    <div class="download-card" data-category="foundation">
+
+      <div class="file-icon pdf">
+        PDF
+      </div>
+
+      <div class="file-content">
+
+        <span class="file-tag">Foundation</span>
+
+        <h3>Market Basics Notes</h3>
+
+        <p>
+          Beginner-friendly PDF notes covering market structure,
+          exchanges and core trading terms.
+        </p>
+
+        <div class="file-meta">
+          <span>📄 PDF</span>
+          <span>2.4 MB</span>
+        </div>
+
+        <button class="download-btn">
+          Download
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="download-card" data-category="technical">
+
+      <div class="file-icon pdf">
+        PDF
+      </div>
+
+      <div class="file-content">
+
+        <span class="file-tag technical">Technical</span>
+
+        <h3>Support & Resistance Guide</h3>
+
+        <p>
+          Complete guide for identifying support, resistance,
+          breakout and retest zones.
+        </p>
+
+        <div class="file-meta">
+          <span>📄 PDF</span>
+          <span>3.1 MB</span>
+        </div>
+
+        <button class="download-btn">
+          Download
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="download-card" data-category="foundation">
+
+      <div class="file-icon template">
+        XLS
+      </div>
+
+      <div class="file-content">
+
+        <span class="file-tag">Foundation</span>
+
+        <h3>Risk Management Sheet</h3>
+
+        <p>
+          Trading risk calculation sheet for position sizing
+          and capital protection.
+        </p>
+
+        <div class="file-meta">
+          <span>📊 Template</span>
+          <span>850 KB</span>
+        </div>
+
+        <button class="download-btn">
+          Download
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="download-card" data-category="bootcamp">
+
+      <div class="file-icon notes">
+        DOC
+      </div>
+
+      <div class="file-content">
+
+        <span class="file-tag bootcamp">Bootcamp</span>
+
+        <h3>Bootcamp Practice Tasks</h3>
+
+        <p>
+          Practical exercises given during the live trading bootcamp.
+        </p>
+
+        <div class="file-meta">
+          <span>📝 Notes</span>
+          <span>1.2 MB</span>
+        </div>
+
+        <button class="download-btn">
+          Download
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="download-card locked-file" data-category="locked">
+
+      <div class="file-icon locked">
+        🔒
+      </div>
+
+      <div class="file-content">
+
+        <span class="file-tag locked-tag">Locked</span>
+
+        <h3>Advanced Price Action PDF</h3>
+
+        <p>
+          Unlock this resource after completing the Technical Analysis course.
+        </p>
+
+        <div class="file-meta">
+          <span>Premium PDF</span>
+          <span>Locked</span>
+        </div>
+
+        <button class="locked-btn">
+          Locked
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="download-card locked-file" data-category="locked">
+
+      <div class="file-icon locked">
+        🔒
+      </div>
+
+      <div class="file-content">
+
+        <span class="file-tag locked-tag">Locked</span>
+
+        <h3>Full Trading Journal Template</h3>
+
+        <p>
+          Unlock this template after completing Foundation Program.
+        </p>
+
+        <div class="file-meta">
+          <span>Premium Template</span>
+          <span>Locked</span>
+        </div>
+
+        <button class="locked-btn">
+          Locked
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+
+<script src="/js/downloads.js"></script>
+
+</body>
+</html>
