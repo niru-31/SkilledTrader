@@ -16,7 +16,7 @@ FILE: login.html
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/css/auth.css">
+  <link rel="stylesheet" href="/project-folder/css/auth.css">
   </head>
 <body>
 
@@ -87,7 +87,7 @@ FILE: login.html
     </div>
 
     <!-- RIGHT SIDE -->
-<div class="welcome-section">
+<div class="welcome-section" id="welcomeSection">
 
   <div class="welcome-content">
 
@@ -99,21 +99,37 @@ FILE: login.html
       </div>
     </div>
 
-    <h1 id="welcomeTitle">Welcome Back!</h1>
+    <h1 id="welcomeTitle">
+      Welcome Back!
+    </h1>
 
     <p id="welcomeText">
       Welcome back! We are so happy to have you here.
       It's great to see you again.
     </p>
 
-    <button id="toggleBtn">
+    <!-- Whole panel is clickable -->
+    <button
+      id="toggleBtn"
+      type="button"
+      class="welcome-toggle"
+    >
       No account yet? Signup.
     </button>
 
   </div>
 
+  <!-- Invisible full-size clickable layer -->
+  <button
+    id="panelToggle"
+    type="button"
+    aria-label="Toggle Login Signup"
+    class="panel-toggle"
+  ></button>
+
+</div>
 </div>
   </div>
-  <script src="/js/login.js"></script>
+  <script src="/project-folder/js/login.js"></script>
 </body>
 </html>
