@@ -7,21 +7,40 @@ const welcomeText = document.getElementById("welcomeText");
 
 const API_URL = "https://skilled-trader.onrender.com/api/auth";
 
-let isLogin = true;
+/* ===========================
+   SHOW SIGNUP FIRST
+=========================== */
 
-// TOGGLE LOGIN/SIGNUP
+loginForm.classList.remove("active-form");
+signupForm.classList.add("active-form");
+
+welcomeTitle.innerText = "Hello Friend!";
+welcomeText.innerText =
+"Create your account and start your journey with us.";
+
+toggleBtn.innerText =
+"Already have an account? Signin.";
+
+let isLogin = false;
+
+/* ===========================
+   TOGGLE LOGIN / SIGNUP
+=========================== */
+
 toggleBtn.addEventListener("click", () => {
 
-  if(isLogin){
+  if (isLogin) {
 
     loginForm.classList.remove("active-form");
     signupForm.classList.add("active-form");
 
     welcomeTitle.innerText = "Hello Friend!";
-    welcomeText.innerText =
-    "Create your account and start your journey with us.";
 
-    toggleBtn.innerText = "Already have an account? Signin.";
+    welcomeText.innerText =
+      "Create your account and start your journey with us.";
+
+    toggleBtn.innerText =
+      "Already have an account? Signin.";
 
   } else {
 
@@ -29,17 +48,23 @@ toggleBtn.addEventListener("click", () => {
     loginForm.classList.add("active-form");
 
     welcomeTitle.innerText = "Welcome Back!";
-    welcomeText.innerText =
-    "Welcome back! We are so happy to have you here.";
 
-    toggleBtn.innerText = "No account yet? Signup.";
+    welcomeText.innerText =
+      "Welcome back! We are so happy to have you here.";
+
+    toggleBtn.innerText =
+      "No account yet? Signup.";
+
   }
 
   isLogin = !isLogin;
+
 });
 
+/* ===========================
+   LOGIN
+=========================== */
 
-// LOGIN WITH BACKEND
 loginForm.addEventListener("submit", async (e) => {
 
   e.preventDefault();
@@ -50,24 +75,26 @@ loginForm.addEventListener("submit", async (e) => {
   const password =
     document.getElementById("loginPassword").value;
 
-  try{
+  try {
 
-    const response =
-      await fetch(`${API_URL}/login`, {
-        method:"POST",
-        headers:{
-          "Content-Type":"application/json"
-        },
-        body:JSON.stringify({
-          email,
-          password
-        })
-      });
+    const response = await fetch(`${API_URL}/login`, {
 
-    const data =
-      await response.json();
+      method: "POST",
 
-    if(!data.success){
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      body: JSON.stringify({
+        email,
+        password
+      })
+
+    });
+
+    const data = await response.json();
+
+    if (!data.success) {
 
       alert(data.message);
       return;
@@ -82,17 +109,22 @@ loginForm.addEventListener("submit", async (e) => {
 
     window.location.href = "index.html";
 
-  }catch(error){
+  }
+
+  catch (error) {
 
     console.log(error);
-    alert("Backend not connected. Please start backend server.");
+
+    alert("Backend not connected.");
 
   }
 
 });
 
+/* ===========================
+   SIGNUP
+=========================== */
 
-// SIGNUP WITH BACKEND
 signupForm.addEventListener("submit", async (e) => {
 
   e.preventDefault();
@@ -106,57 +138,65 @@ signupForm.addEventListener("submit", async (e) => {
   const password =
     document.getElementById("signupPassword").value;
 
-  try{
+  try {
 
-    const response =
-      await fetch(`${API_URL}/register`, {
-        method:"POST",
-        headers:{
-          "Content-Type":"application/json"
-        },
-        body:JSON.stringify({
-          name,
-          email,
-          password
-        })
-      });
+    const response = await fetch(`${API_URL}/register`, {
 
-    const data =
-      await response.json();
+      method: "POST",
 
-    if(!data.success){
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      body: JSON.stringify({
+        name,
+        email,
+        password
+      })
+
+    });
+
+    const data = await response.json();
+
+    if (!data.success) {
 
       alert(data.message);
       return;
 
     }
 
-    alert("Signup Successful! Now please signin.");
+    alert("Signup Successful! Please Signin.");
 
     signupForm.classList.remove("active-form");
     loginForm.classList.add("active-form");
 
     welcomeTitle.innerText = "Welcome Back!";
-    welcomeText.innerText =
-    "Welcome back! We are so happy to have you here.";
 
-    toggleBtn.innerText = "No account yet? Signup.";
+    welcomeText.innerText =
+      "Welcome back! We are so happy to have you here.";
+
+    toggleBtn.innerText =
+      "No account yet? Signup.";
 
     isLogin = true;
 
-  }catch(error){
+    signupForm.reset();
+
+  }
+
+  catch (error) {
 
     console.log(error);
-    alert("Backend not connected. Please start backend server.");
+
+    alert("Backend not connected.");
 
   }
 
 });
 
-
-/* =========================================
+/* ===========================
    SHOW / HIDE PASSWORD
-========================================= */
+=========================== */
 
 const toggleButtons =
 document.querySelectorAll(".toggle-password");
@@ -166,18 +206,16 @@ toggleButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
 
     const input =
-    document.getElementById(
-      btn.dataset.target
-    );
+      document.getElementById(btn.dataset.target);
 
-    if(input.type === "password"){
+    if (input.type === "password") {
 
       input.type = "text";
 
       btn.classList.remove("fa-eye");
       btn.classList.add("fa-eye-slash");
 
-    }else{
+    } else {
 
       input.type = "password";
 
